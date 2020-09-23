@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { HeroesComponent } from './heroes.component';
+import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 describe('HeroesComponent', () => {
   let component: HeroesComponent;
@@ -8,7 +10,8 @@ describe('HeroesComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HeroesComponent ]
+      declarations: [ HeroesComponent ],
+      imports: [FormsModule]
     })
     .compileComponents();
   });
