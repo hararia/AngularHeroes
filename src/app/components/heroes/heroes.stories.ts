@@ -24,14 +24,13 @@ export const Default = () => ({
 export const Selected = () => ({
   component: HeroesComponent,
   props: {
+    selectedHero: {
+      id: 15,
+      name: 'Magneta'
+    },
     hero: {
       id: 1,
       name: 'Windstorm'
-    },
-    selectedHero: {
-    id: 15,
-    name: 'Magneta'
-    },
-    OnSelect: actionsData.OnSelect
+    }
   }
   });

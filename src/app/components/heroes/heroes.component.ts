@@ -15,12 +15,9 @@ export class HeroesComponent implements OnInit {
     name: 'Windstorm'
   };
 
-  @Output() SelectHero: EventEmitter<any> = new EventEmitter();
-
   selectedHero: Hero;
   onSelect(hero: Hero): void{
     this.selectedHero = hero;
-    this.SelectHero.emit(this.selectedHero.id);
   }
 
   constructor() { }
